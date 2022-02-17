@@ -1,4 +1,5 @@
 import random
+
 def start_message():
   print('じゃんけんスタート')
 
@@ -18,8 +19,9 @@ def view_result(hand_diff):
     print('負け')
 
 start_message()
-my_hand=get_my_hand()
-you_hand=get_you_hand()
+
+my_hand = get_my_hand()
+you_hand = get_you_hand()
 hand_diff = my_hand - you_hand
 
 view_result(hand_diff)
