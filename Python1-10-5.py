@@ -8,7 +8,7 @@ def start_message():
 
 def is_hand(string):
   if string.isdigit():
-    number=int(string)
+    number = int(string)
     if number >= 0 and number <= 2:
       return True
     else:
@@ -53,7 +53,7 @@ def play():
   while not is_hand(my_hand):
     my_hand = get_my_hand()
 
-  my_hand=int(my_hand)
+  my_hand = int(my_hand)
   you_hand = get_you_hand()
   hand_diff = my_hand - you_hand
 
